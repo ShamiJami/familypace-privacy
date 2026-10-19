@@ -30,7 +30,7 @@ FamilyPace nie wymaga założenia konta.
 
 FamilyPace działa offline. Aplikacja **nie wysyła lokalizacji, nagrań ani danych treningowych na serwery dewelopera**. Nie zawiera reklam, modułów analitycznych ani narzędzi śledzenia użytkowników w celach marketingowych. Deweloper nie sprzedaje danych użytkowników ani nie udostępnia ich reklamodawcom.
 
-System Android i producent urządzenia mogą niezależnie korzystać z własnych usług lokalizacyjnych, zabezpieczeń i kopii zapasowych. Korzystanie z tych usług podlega zasadom odpowiednich dostawców.
+System Android, iOS oraz producenci urządzeń mogą niezależnie korzystać z własnych usług lokalizacyjnych, zabezpieczeń i kopii zapasowych. Korzystanie z tych usług podlega zasadom odpowiednich dostawców.
 
 ### 4. Uprawnienia
 
@@ -38,9 +38,13 @@ Aplikacja może prosić o dostęp do dokładnej/przybliżonej lokalizacji, mikro
 
 ### 5. Przechowywanie, kopie zapasowe i usuwanie
 
-Dane są przechowywane lokalnie na urządzeniu. Użytkownik może usuwać nagrania lub inne dane za pomocą funkcji dostępnych w aplikacji oraz usunąć dane aplikacji w ustawieniach systemu.
+Dane aplikacji są zapisywane lokalnie na urządzeniu. Użytkownik może usuwać nagrania lub inne dane za pomocą funkcji dostępnych w aplikacji oraz usunąć dane aplikacji w ustawieniach systemu.
 
-Odinstalowanie aplikacji zwykle usuwa lokalne dane aplikacji. W zależności od konfiguracji Androida niektóre dane mogą jednak zostać uwzględnione w **systemowej kopii zapasowej lub transferze między urządzeniami**, zarządzanych przez dostawcę systemu. Ewentualne usunięcie tych kopii odbywa się według zasad i ustawień dostawcy usługi kopii zapasowej. Deweloper nie posiada serwerowych kopii nagrań ani danych treningowych.
+**Automatyczne kopie systemowe:** FamilyPace nie wyłącza systemowych kopii zapasowych. W zależności od ustawień urządzenia i ograniczeń usługi, kopia zapasowa Androida (np. kopia Google) lub przeniesienie na inne urządzenie może obejmować ustawienia, historię treningów **oraz pliki nagrań głosowych**, w tym nagrania członków rodziny. Na iPhone'ach dane aplikacji, w tym nagrania, mogą wchodzić do kopii zapasowych iCloud lub kopii tworzonych na komputerze, zależnie od ustawień systemu. Nie ma gwarancji, że każde nagranie zostanie zachowane lub przywrócone. Te kopie są tworzone i obsługiwane przez dostawcę systemu, nie przez serwery FamilyPace.
+
+**Ręczny eksport i import:** funkcja **GŁOSY → Eksportuj kopię** pozwala użytkownikowi utworzyć i udostępnić kopię zawierającą nagrania głosowe. Wybrane przez użytkownika miejsce zapisu lub udostępnienia (np. Pliki, poczta e-mail, AirDrop czy usługa chmurowa) może przetwarzać te pliki zgodnie z własną polityką prywatności. FamilyPace nie wysyła takiej kopii samodzielnie; o eksporcie i jego odbiorcy decyduje użytkownik. Użytkownik może też importować wcześniej przygotowaną kopię.
+
+Odinstalowanie aplikacji zwykle usuwa lokalne dane aplikacji, ale nie musi usuwać już utworzonych kopii systemowych ani ręcznie wyeksportowanych plików. Usuwanie kopii poza aplikacją podlega ustawieniom odpowiedniej usługi i decyzjom użytkownika. Deweloper nie posiada serwerowych kopii nagrań ani danych treningowych.
 
 ### 6. Bezpieczeństwo
 
@@ -82,7 +86,7 @@ FamilyPace does not require an account.
 
 FamilyPace works offline. The app **does not send location, recordings or workout data to developer-operated servers**. It contains no advertisements, analytics SDKs or marketing tracking tools. The developer does not sell user data or share it with advertisers.
 
-Android and device manufacturers may independently provide location, security and backup services. Their own privacy policies apply to those services.
+Android, iOS and device manufacturers may independently provide location, security and backup services. Their own privacy policies apply to those services.
 
 ### 4. Permissions
 
@@ -90,9 +94,13 @@ The app may request access to precise/approximate location, microphone and notif
 
 ### 5. Storage, backups and deletion
 
-Data is stored locally on your device. You can delete recordings or other information through available in-app features, or clear the application's data in your device settings.
+App data is stored locally on your device. You can delete recordings or other information through available in-app features, or clear the application's data in your device settings.
 
-Uninstalling the app normally removes locally stored app data. Depending on Android settings, however, some information may be included in **operating-system backups or device-to-device transfers** managed by the operating-system provider. Deleting any such backups is governed by that provider's controls and retention rules. The developer does not keep server-side copies of your recordings or workout data.
+**Automatic system backups:** FamilyPace does not disable operating-system backups. Depending on device settings and backup service limits, Android backups (such as Google backups) or device-to-device transfers may include preferences, workout history **and voice recording files**, including recordings of family members. On iPhones, app data, including recordings, may be included in iCloud or computer-based device backups depending on iOS settings. Not every recording is guaranteed to be backed up or restored. These backups are handled by operating-system providers rather than FamilyPace servers.
+
+**Manual export and import:** the **VOICES / GŁOSY → Export backup / Eksportuj kopię** feature lets users create and share a backup that includes voice recordings. The destination chosen by the user (for example Files, email, AirDrop or cloud storage) may process those files under its own privacy policy. FamilyPace does not send that backup automatically: the user decides whether and where to share it. Users may also import a previously created backup.
+
+Uninstalling the app normally removes local app data, but does not necessarily delete existing system backups or manually exported files. Removing external backups is governed by the relevant service settings and the user's actions. The developer does not keep server-side copies of your recordings or workout data.
 
 ### 6. Security
 
